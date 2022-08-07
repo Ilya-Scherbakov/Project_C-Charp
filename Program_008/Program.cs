@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Определение четное число или нет
 Console.WriteLine("Hello, World!");
