@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Помоему первая задача которую он сам рещал
 Console.WriteLine("Hello, World!");
 
 int num = new Random().Next(10,100);
