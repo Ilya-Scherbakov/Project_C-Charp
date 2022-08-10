@@ -1,11 +1,11 @@
 ﻿// Выводит третью цифру заданного числа или сообщает что ее нет
 
-int num = new Random().Next(10, 10000);
+int num = new Random().Next(10, 10000000);
 Console.WriteLine(num);
 
-if (num => 100)
+if (num > 99)
 {
-    while (num => 1000)
+    while (num > 999)
     {
         num = num / 10;
     }
