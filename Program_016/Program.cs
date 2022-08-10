@@ -3,9 +3,9 @@
 int num = new Random().Next(10, 10000);
 Console.WriteLine(num);
 
-if (num > 100)
+if (num => 100)
 {
-    while (num > 1000)
+    while (num => 1000)
     {
         num = num / 10;
     }
@@ -13,5 +13,5 @@ if (num > 100)
 }
 else
 {
-    Console.WriteLine("Третей цифры нет");
+    Console.WriteLine("Третьей цифры нет");
 }
