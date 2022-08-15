@@ -1,12 +1,11 @@
-﻿// На вход число N и выдает таблицу квадратов чисел
+﻿// На ввод число N, а на выходе таблицаквадратов этих чисел
 
 Console.Write("Введите число N: ");
 int n = Convert.ToInt32(Console.ReadLine());
-sum = 1;
+int count = 1;
 
-while (sum <= n)
+while (count <= n)
 {
-    Console.WriteLine(sum * sum);
-    sum++;
+    Console.WriteLine(count * count);
+    count++;
 }
-Console.WriteLine();
