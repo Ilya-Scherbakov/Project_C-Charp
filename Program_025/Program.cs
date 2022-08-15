@@ -13,4 +13,4 @@ Console.Write("Введите координату Y точки B: ");
 int zB = Convert.ToInt32(Console.ReadLine());
 
 double d = Math.Sqrt(Math.Pow((xB - xA),2) + Math.Pow((yB - yA),2) + Math.Pow((zB - zA),2));
-Console.WriteLine($"промежуточный результат: {d.ToString("F" + 2)}");
+Console.WriteLine($"расстояние: {d.ToString("F" + 2)}");
