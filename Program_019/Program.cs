@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Проверка упорядоченности цифр в числе напр: 123456 - да; 32156 - нет
 Console.Write("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int max = n % 10;
