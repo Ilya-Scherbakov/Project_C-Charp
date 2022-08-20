@@ -3,10 +3,10 @@
 void FillArray(int[] arr)
 {
     int i = 0;
-    for (int length = arr.length; i < length; i++)
+    for (int length = arr.Length; i < length; i++)
     {
         arr[i] = new Random().Next(0, 2);
-        Console.WriteLine($" {arr[i]} ");
+        Console.Write($" {arr[i]} ");
     }
 }
 
