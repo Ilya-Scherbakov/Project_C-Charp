@@ -8,8 +8,9 @@ for (int i = 0; i < array.Length; i++)
     Console.Write($" {array[i]}");
     
 }
+Console.WriteLine();
 Console.WriteLine("Напишите циферку:");
-int num = Convert.ToInt32(Console.ReadLine);
+int num = Convert.ToInt32(Console.ReadLine());
 bool start = false;
 for (int i = 0; i < array.Length; i++)
 {
@@ -17,12 +18,8 @@ for (int i = 0; i < array.Length; i++)
         {
             start = true;
         }
-    else
-    {
-        start = false;
-    }
 }
-Console.WriteLine();
+
 if (start == true)
 Console.Write("Данное число есть");
 else
