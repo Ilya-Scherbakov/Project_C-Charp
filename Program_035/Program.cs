@@ -6,29 +6,18 @@ for (int i = 0; i < rococo.Length; i++)
 {
     rococo[i] = new Random().Next(-9, 10);
     Console.Write($" {rococo[i]}");
-    if (rococo[i] < 0)
-    {
-        rococo[i] = rococo[i] * -1;
-    }
-    else
-    {
-        rococo[i] = rococo[i] * -1;
-    }
 }
 
-Console.WriteLine($"новый массив: {rococo[i]}");
-
 // Пробую сам так
-// int Func(int arr[])
-// for (int i = 0; i < rococo.Length; i++)
-// {
-//     rococo[i] = new Random().Next(-9, 10);
-//     Console.Write($" {rococo[i]}");
-//     return;
-// }
+int[] Func(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+      arr[i] = arr[i] * -1;
+      Console.Write($"{arr[i]}; ");
+    } 
+    return arr;
+}
 
-// Func(rococo[10])
-// rococo[i] = - rococo[i];
-// Console.Write($" {rococo[i]}");
-
-// int[] rococo = new int[10];
+Console.WriteLine();
+Func(rococo);
