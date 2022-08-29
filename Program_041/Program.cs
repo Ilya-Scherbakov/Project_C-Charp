@@ -7,11 +7,12 @@
 Console.Write("Введите длину массива: ");
 int n = Convert.ToInt32(Console.ReadLine());
 double[] arr = new double[n];
-double[] Fill(double[] array)
+double[] Fill(int n)
 {
+    double[] array = new double[n];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(0, 20) + Math.Round(new Random().NextDouble(), 2);
+        array[i] = Math.Round(new Random().Next(0, 20) + new Random().NextDouble(),2);
         Console.Write($" {array[i]} ");
     }
     return array;
@@ -24,12 +25,12 @@ void sumOfEl(double[] array) // задача 36
     double sum = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (i % 2 != 0) 
+        if (i % 2 != 0)
         {
             sum = sum + array[i];
         }
     }
-    Console.WriteLine($"Сумма эл-ов на нечетных позициях: {Math.Round(sum,2)}");
+    Console.WriteLine($"Сумма эл-ов на нечетных позициях: {Math.Round(sum, 2)}");
 }
 
 void MaxMin(double[] array)  // задача 38
@@ -42,10 +43,10 @@ void MaxMin(double[] array)  // задача 38
         if (array[i] < min) min = array[i];
         if (array[i] < min) min = array[i];
     }
-    Console.WriteLine($"Разница между максимальным и минимаьным значением: {Math.Round((max - min),2)}");
+    Console.WriteLine($"Разница между максимальным и минимаьным значением: {Math.Round((max - min), 2)}");
 }
 
-Fill(arr);
+double[] arty = Fill(n);
 Console.WriteLine();
-sumOfEl(arr);
-MaxMin(arr);
+sumOfEl(arty);
+MaxMin(arty);
