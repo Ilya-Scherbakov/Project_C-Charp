@@ -11,6 +11,7 @@ for (int i = 0; i < array.Length; i++)
 Console.WriteLine();
 Console.WriteLine("Напишите циферку:");
 int num = Convert.ToInt32(Console.ReadLine());
+
 bool start = false;
 for (int i = 0; i < array.Length; i++)
 {
@@ -20,7 +21,7 @@ for (int i = 0; i < array.Length; i++)
         }
 }
 
-if (start == true)
+if (start)
 Console.Write("Данное число есть");
 else
 Console.Write("Нет");
