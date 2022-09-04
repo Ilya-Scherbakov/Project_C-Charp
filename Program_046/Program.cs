@@ -36,7 +36,7 @@ void arithSum(double[,] arr, int x, int y)
         {
             sum = sum + arr[i, j];
         }
-        Console.WriteLine($"среденеарифмитеческое столбца {j + 1}: {Math.Round(sum / y, 0)}");
+        Console.WriteLine($"среденеарифмитеческое столбца {j + 1}: {Math.Round(sum / arr.GetLength(0), 0)}");
     }
 }
 
