@@ -9,6 +9,18 @@
 //         Console.Write($"{i} ");
 // }
 // numbers(6);
+void numbersRec(int n) // Задача 63. Решена рекурсией.
+{
+    if (n == 1)
+    Console.Write($"ХЗ почему выводиться первым {n} ");
+    else
+    {
+        numbersRec(n-1);
+        Console.Write($"{n} ");
+    }
+}
+numbersRec(12);
+
 
 
 // void numbersMN(int M, int N) // Задача 65. Но это вроде не рекурсия
@@ -17,18 +29,18 @@
 //         Console.Write($"{i} ");
 // }
 // numbersMN(6, 10);
-string numbersRec (int a, int b) // Задача 65. РЕШЕНА РЕКУРСИЕЙ.
-{
-    if (a<=b)
-    return $"{a} " + numbersRec(a+1, b);
-    else
-    return string.Empty;
-}
-Console.WriteLine("Введите значение М: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите значение N: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(numbersRec(m,n));
+// string numbersRec(int a, int b) // Задача 65. РЕШЕНА РЕКУРСИЕЙ.
+// {
+//     if (a <= b)
+//         return $"{a} " + numbersRec(a + 1, b);
+//     else
+//         return string.Empty;
+// }
+// Console.WriteLine("Введите значение М: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите значение N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(numbersRec(m, n));
 
 // double Factorial(int N) // Доп. задача Факториал. Решенная рекурсией
 // {
